@@ -1,0 +1,98 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "a745de8c-9216-4cf7-9a91-94bf71b6bd6b")
+	(paper "A4")
+	(title_block
+		(title "Gotek(?) SMD Handrawn Schematic, Layout and Gerbers")
+		(date "2025-06-07")
+		(rev "1.2")
+		(company "LiveBoxAndy")
+		(comment 1 "PCB photographs from both source PCB's were used for a majority of the routing.")
+		(comment 2 "Used SFRC2D.B PCB for the 26 Pin FFC connections and some of the headers")
+		(comment 3 "Used SFRKC30.AT4.35 PCB for most of the schematic and layout.")
+		(comment 4 "Mating of an AT32F415 26 Pin Connector with the electronics from a 34 Pin AT32F435 Gotek")
+	)
+	(lib_symbols)
+	(text_box "Revision 1.1\nRemoved L3 and Changed R21 to 12K to reduce LED brightness."
+		(exclude_from_sim no)
+		(at 25.654 69.342 0)
+		(size 75.438 6.096)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "0f337a16-3e6c-4bcf-b9f5-68645069f2f5")
+	)
+	(text_box "Revision 1.0\nInitial drawings and schematics using the components and values from the original boards. Where possible SMT components were used. Did not fit the EEPROM as it is not used by the flashfloppy firmware.\n"
+		(exclude_from_sim no)
+		(at 25.654 58.42 0)
+		(size 75.438 10.922)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "ca7ae5a0-3f6f-4cc9-8417-fe2b94f37d1d")
+	)
+	(text_box "Initial Release V0.0\nInitial schematic and gerbers for a Gotek(?) compatible with an Artery AT32F435RGT7 chip and a 26 Pin FFC connector using SMD components.\nUsed SFRKC30.AT4.35 PCB for most of the schematic and layout but used SFRC2D.B PCB for the 26 Pin FFC connections.\nUsed photographs and a multimeter along with removing U1 and U3 on the SFRKC30.AT4.35 to get to the traces underneath.\nWhere possible I followed the original PCB routing of the SFRKC30.AT4.35 but Kicad has some different rules for trace widths (between pins 5&6 of U8, which isn't fitted for FlashFloppy).\nUsing SMD components required a few more routing changes but electrically it is still good. What a pain in the ass to find SMD parts that don't cost a fortune and have Kicad mod and sym files.\nWorks as a replacement for the floppy in a TDS3052 Oscilloscope. Just needs a slim case (13mm)\n\n"
+		(exclude_from_sim no)
+		(at 25.654 24.638 0)
+		(size 75.438 33.782)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "cbee9464-fb4f-47ae-aa65-2daaf954e62c")
+	)
+	(text_box "Revision 1.2\nChanged vertical headers to Samtec LoProfile to fit within a 13mm High Case.\nCombined some separate headers together for better physical strength. The signal in the header location has not changed in that the physical locations on the board for JA, JB , JC, MTRON etc have not changed.\nJ1 7x1 header contains JD, JE, S1 and MO1.\nJ4 5x2 header contains BOOT0, SWDIO, SWCLK, USART_TX1, USART_RX1, NRST, 5V, 3V3 and Gnd.\nJ5 4x2 header contains MTRON, JA, JC and JB.\nJ7 3x2 header contains JKA1, JKA2, I2C2_CLK, I2C2_DTA, 3V3 and Gnd.\nJ8 3x2 header contains Encoder Switch, U3-40, ENC1, ENC2, 5V and Gnd.\n"
+		(exclude_from_sim no)
+		(at 25.654 75.438 0)
+		(size 75.438 25.908)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "facee032-694b-4ee9-9784-9922822e4c63")
+	)
+)
